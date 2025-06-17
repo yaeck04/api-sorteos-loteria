@@ -7,6 +7,10 @@ from datetime import datetime
 
 app = FastAPI()
 
+@app.get("/")
+def root():
+    return {"mensaje": "✅ API de Sorteos en funcionamiento"}
+
 EMAIL = "khloealba932@gmail.com"
 PASSWORD = "Anabelyae04"
 
